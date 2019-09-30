@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json.schemastore.org/package",
+  "name": "@rawdee/pmd-wrapper",
+  "version": "0.1.0",
+  "description": "A node wrapper for PMD (https://pmd.github.io/), a cross-language static code analyzer",
+  "author": "Rodolphe Blancho",
+  "license": "MIT",
+  "main": "./lib/pmd.js",
+  "types": "./lib/pmd.d.ts",
+  "keywords": [
+    "pmd",
+    "code analysis",
+    "java",
+    "apex"
+  ],
+  "bugs": {
+    "url": "https://github.com/rody/node-pmd-wrapper/issues"
+  },
+  "bin": {
+    "pmd": "./lib/cli.js"
+  },
+  "repository": {
+    "url": "https://github.com/rody/pmd-wrapper"
+  },
+  "homepage": "https://github.com/rody/pmd-wrapper",
+  "scripts": {
+    "format:check": "prettier --check \"src/**/*.ts\" \"src/**/*.js\" \"**/*.md\"",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"**/*.md\"",
+    "lint": "eslint \"src/**/*.ts\"",
+    "lint:fix": "eslint --fix \"src/**/*.ts\"",
+    "build": "tsc",
+    "check": "npm run lint && npm run format:check",
+    "prepublish": "npm run build && npm run check && ./download-pmd.sh",
+    "posttest": "npm run format"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.8",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "find-java-home": "^1.0.1"
+  }
+}
