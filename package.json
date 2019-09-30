@@ -22,10 +22,14 @@
   "repository": {
     "url": "https://github.com/rody/pmd-wrapper"
   },
+  "files": [
+    "lib/**/*.js",
+    "vendor/**/*"
+  ],
   "homepage": "https://github.com/rody/pmd-wrapper",
   "scripts": {
     "format:check": "prettier --check \"src/**/*.ts\" \"src/**/*.js\" \"**/*.md\"",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"**/*.md\"",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\" \"**/*/md\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint --fix \"src/**/*.ts\"",
     "build": "tsc",
