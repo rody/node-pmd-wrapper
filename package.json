@@ -20,7 +20,7 @@
     "pmd": "./lib/cli.js"
   },
   "repository": {
-    "url": "https://github.com/rody/pmd-wrapper"
+    "url": "https://github.com/rody/node-pmd-wrapper"
   },
   "files": [
     "lib/**/*.js",
