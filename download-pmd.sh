@@ -2,7 +2,7 @@
 
 set -e
 
-PMD_VERSION=6.18.0
+PMD_VERSION=6.19.0
 DOWNLOAD_URL="https://github.com/pmd/pmd/releases/download/pmd_releases%2F${PMD_VERSION}/pmd-bin-${PMD_VERSION}.zip"
 
 [ -d "./.cache" ] || mkdir ./.cache
