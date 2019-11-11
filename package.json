@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/package",
   "name": "@rawdee/pmd-wrapper",
-  "version": "0.1.0",
+  "version": "6.19.0",
   "description": "A node wrapper for PMD (https://pmd.github.io/), a cross-language static code analyzer",
   "author": "Rodolphe Blancho",
   "license": "MIT",
