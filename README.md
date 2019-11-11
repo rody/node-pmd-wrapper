@@ -10,11 +10,11 @@ Install the packae with `npm install npm-wrapper` and run
 pmd
 ```
 
-Please refer to PMD documentation for the cli usage: https://pmd.github.io/pmd-6.18.0/pmd_userdocs_cli_reference.html
+Please refer to PMD documentation for the cli usage: https://pmd.github.io/pmd-6.19.0/pmd_userdocs_cli_reference.html
 
 ### Prerequisites
 
-PMD needs a working version of Java installed (see [PMD requirements](https://pmd.github.io/pmd-6.18.0/pmd_userdocs_installation.html)).
+PMD needs a working version of Java installed (see [PMD requirements](https://pmd.github.io/pmd-6.19.0/pmd_userdocs_installation.html)).
 Internally the wrapper uses [find-java-home](https://www.npmjs.com/package/find-java-home) to find the installed Java version.
 
 ### Installing
